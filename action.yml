@@ -5,7 +5,7 @@ branding:
   color: 'green'
 inputs:
   config:
-    description: 'yaml config file's path'
+    description: "yaml config file's path"
     default: 'nfpm.yml'
     required: false
   target:
@@ -21,6 +21,6 @@ outputs:
     description: "Created package's name"
 runs:
   using: 'docker'
-  image: 'docker://smartcoder/nfpm:v1.1'
+  image: 'docker://smartcoder/nfpm:v1.0'
   args:
-    - TAG=v1.1
+    - TAG=v1.0
