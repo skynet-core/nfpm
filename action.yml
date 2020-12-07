@@ -19,7 +19,6 @@ inputs:
 outputs:
   package:
     description: "Created package's name"
-    value: 
 runs:
   using: 'docker'
-  image: 'docker://smartcoder/nfpm:v1.2'
+  image: 'docker://smartcoder/nfpm:v1.3'
