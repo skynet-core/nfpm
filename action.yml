@@ -21,6 +21,4 @@ outputs:
     description: "Created package's name"
 runs:
   using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - TAG=v1.0
+  image: 'docker://smartcoder/nfpm:v1.0'

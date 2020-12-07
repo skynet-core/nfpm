@@ -6,7 +6,7 @@ FROM golang:${GO_VERSION}-alpine${ALPINE_VERSION}
 ARG NFPM_VERSION=1.10.2
 ENV NFPM_VERSION=${NFPM_VERSION}
 
-RUN echo "Packaging nfpm version: ${NFPM_VERSION}" && apk update && apk upgrade && apk add --no-cache git bash && \
+RUN echo "Packaging nfpm version: ${NFPM_VERSION}" && apk update && apk upgrade && apk add --no-cache git bash sudo && \
     cd /tmp && git clone https://github.com/goreleaser/nfpm && \
     cd ./nfpm && git checkout "v${NFPM_VERSION}" && \
     go mod download && cat cmd/nfpm/main.go | sed "s|version = \"master\"|version  = \"${NFPM_VERSION}\"|g" > /tmp/main.go && mv /tmp/main.go cmd/nfpm/main.go && \
