@@ -23,13 +23,13 @@
 ## Example usage
 
     - name: Create deb package
-      uses: skynet-core/nfpm@v1.0
+      uses: skynet-core/nfpm@v1.2
       id: deb-package
       with:
         config: "custom.yaml"
         packager: "deb"
     - name: Create rpm package
-      uses: skynet-core/nfpm@v1.0
+      uses: skynet-core/nfpm@v1.2
       id: rpm-package
       with:
         config: "custom.yaml"

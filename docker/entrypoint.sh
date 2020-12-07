@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -l
 
 if [ "x$INPUT_CONFIG" != "x" ] && [ "x$INPUT_PACKAGER" != "x" ]; then
     if [ "x$INPUT_TARGET" != "x" ]; then
