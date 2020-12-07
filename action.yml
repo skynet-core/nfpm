@@ -1,0 +1,24 @@
+name: 'NFPM packager action'
+description: 'NFPM packaging tool for deb and rpm packaging'
+branding:
+  icon: 'box'  
+  color: 'green'
+inputs:
+  config:
+    description: 'yaml config file's path'
+    default: 'nfpm.yml'
+    required: false
+  target:
+    description: 'package target'
+    required: false
+    default: ''
+  packager:
+    description: 'packager name'
+    required: true
+    default: ''
+outputs:
+  package:
+    description: "Created package's name"
+runs:
+  using: 'docker'
+  image: 'docker://smartcoder/nfpm:v1.2'
