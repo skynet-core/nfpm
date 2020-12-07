@@ -22,3 +22,5 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://smartcoder/nfpm:v1.0'
+  args:
+    - TAG=v1.0
