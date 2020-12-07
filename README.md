@@ -1,0 +1,2 @@
+# nfpm
+Nfpm GitHub Action
