@@ -21,4 +21,4 @@ outputs:
     description: "Created package's name"
 runs:
   using: 'docker'
-  image: 'docker://smartcoder/nfpm:v1.4'
+  image: 'docker://smartcoder/nfpm:v1.5'
